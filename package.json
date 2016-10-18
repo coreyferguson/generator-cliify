@@ -1,0 +1,30 @@
+{
+  "name": "generator-cliify",
+  "version": "0.1.0",
+  "description": "CLI-ify: Command line interface (CLI) Node.js application",
+  "main": "generators/app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/coreyferguson/cliify.git"
+  },
+  "keywords": [
+    "CLI",
+    "node",
+    "nconf",
+    "winston",
+    "inquirer",
+    "nquirer",
+    "babel",
+    "es5",
+    "es6"
+  ],
+  "author": "Corey Ferguson <corey.t.ferguson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coreyferguson/cliify/issues"
+  },
+  "homepage": "https://github.com/coreyferguson/cliify#readme"
+}
