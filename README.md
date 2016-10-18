@@ -55,3 +55,13 @@ npm test
         ├── job.spec.js              // unit test
         └── test-environment.spec.js // test environment validation
 ```
+
+## NPM Scripts
+
+- `npm test`: Run style enforcer, tests, and code coverage.
+- `npm start -- --key=value`: Run the CLI tool with given key/value arguments.
+- `npm run release`: Bump the `package.json` version, commit, tag, and publish.
+
+## Contribution
+
+See [CONTRIBUTE.md](CONTRIBUTE.md) for contribution details.
