@@ -4,7 +4,8 @@
   "description": "CLI-ify: Command line interface (CLI) Node.js application",
   "main": "generators/app/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha test"
+    "test": "./node_modules/.bin/mocha test",
+    "release": "npm test && ./node_modules/.bin/release-it"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "mocha": "^3.1.2",
+    "release-it": "^2.4.3",
     "yeoman-assert": "^2.2.1",
     "yeoman-test": "^1.5.1"
   }

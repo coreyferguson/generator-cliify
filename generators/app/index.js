@@ -114,6 +114,7 @@ module.exports = generators.Base.extend({
     this.fs.move(this.destinationPath('_dot_gitignore'), this.destinationPath('.gitignore'));
     this.fs.move(this.destinationPath('_dot_jscsrc'), this.destinationPath('.jscsrc'));
     this.fs.move(this.destinationPath('_dot_babelrc'), this.destinationPath('.babelrc'));
+    this.fs.move(this.destinationPath('_dot_npmignore'), this.destinationPath('.npmignore'));
   },
 
   /**

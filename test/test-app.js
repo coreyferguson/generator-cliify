@@ -21,6 +21,7 @@ describe('app', function() {
       // dot files
       '.babelrc',
       '.gitignore',
+      '.npmignore',
       '.jscsrc',
 
       // root files
@@ -32,6 +33,7 @@ describe('app', function() {
       // config
       'config/argv.json',
       'config/default-config.json',
+      'config/release.json',
 
       // src
       'src/job.js',

@@ -13,7 +13,8 @@
     "start": "npm run babel && ./bin/job.js",
     "istanbul": "./node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --compilers js:babel-register test/unit test/integration",
     "jscs": "./node_modules/.bin/jscs src test config",
-    "test": "npm run jscs && npm run istanbul"
+    "test": "npm run jscs && npm run istanbul",
+    "release": "npm test && npm run babel && ./node_modules/.bin/release-it -c config/release.json"
   },
   "dependencies": {
     "nquirer": "^0.1.8",
@@ -28,6 +29,7 @@
     "istanbul": "^1.0.0-alpha.2",
     "jscs": "^3.0.7",
     "mocha": "^3.1.2",
+    "release-it": "~2.4.3",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0"
   },
