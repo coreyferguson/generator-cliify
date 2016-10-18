@@ -1,0 +1,15 @@
+{
+  "username": {
+    "alias": "u",
+    "describe": "Username",
+    "demand": true
+  },
+  "password": {
+    "alias": "p",
+    "describe": "Password"
+  },
+  "logLevel": {
+    "alias": "l",
+    "describe": "Logging level (error, warn, info, verbose, debug, silly)"
+  }
+}

@@ -4,13 +4,17 @@
   "description": "CLI-ify: Command line interface (CLI) Node.js application",
   "main": "generators/app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha test"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/coreyferguson/cliify.git"
   },
+  "files": [
+    "generators/app"
+  ],
   "keywords": [
+    "yeoman-generator",
     "CLI",
     "node",
     "nconf",
@@ -26,5 +30,14 @@
   "bugs": {
     "url": "https://github.com/coreyferguson/cliify/issues"
   },
-  "homepage": "https://github.com/coreyferguson/cliify#readme"
+  "homepage": "https://github.com/coreyferguson/cliify#readme",
+  "dependencies": {
+    "underscore.string": "^3.3.4",
+    "yeoman-generator": "^0.24.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "yeoman-assert": "^2.2.1",
+    "yeoman-test": "^1.5.1"
+  }
 }
