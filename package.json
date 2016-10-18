@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/coreyferguson/cliify.git"
+    "url": "git+ssh://git@github.com:coreyferguson/generator-cliify.git"
   },
   "files": [
     "generators/app"
@@ -29,9 +29,9 @@
   "author": "Corey Ferguson <corey.t.ferguson@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coreyferguson/cliify/issues"
+    "url": "https://github.com/coreyferguson/generator-cliify/issues"
   },
-  "homepage": "https://github.com/coreyferguson/cliify#readme",
+  "homepage": "https://github.com/coreyferguson/generator-cliify#readme",
   "dependencies": {
     "underscore.string": "^3.3.4",
     "yeoman-generator": "^0.24.1"
