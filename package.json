@@ -1,6 +1,6 @@
 {
   "name": "generator-cliify",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "description": "CLI-ify: Command line interface (CLI) Node.js application",
   "main": "generators/app/index.js",
   "scripts": {
