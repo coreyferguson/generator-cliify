@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const winston = require('winston');
-const job = require('../babel/job');
+const job = require('../babel/job').default;
 
 job.configure();
 job.run().catch(err => {

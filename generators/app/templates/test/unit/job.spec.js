@@ -1,6 +1,6 @@
 
 import { expect, sinon } from '../support/test-utils';
-import { run } from '../../src/job';
+import job from '../../src/job';
 import * as nquirer from 'nquirer';
 import winston from 'winston';
 
@@ -22,7 +22,7 @@ describe('job unit tests', function() {
       .stub(nquirer, 'inquire')
       .returns(Promise.resolve(nconfMock));
     const log = sandbox.stub(winston, 'log');
-    return run().then(credentials => {
+    return job.run().then(credentials => {
       expect(log).to.be.calledWith('debug', 'Username: username');
       expect(log).to.be.calledWith('silly', '(__)');
       expect(log).to.be.calledWith('silly', `(oo) <-- username`);

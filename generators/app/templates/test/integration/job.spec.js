@@ -1,6 +1,6 @@
 
 import { expect, sinon } from '../support/test-utils';
-import { configure, run } from '../../src/job';
+import job from '../../src/job';
 import { nconf } from 'nquirer';
 import winston from 'winston';
 
@@ -25,12 +25,12 @@ describe('job integration tests', function() {
   });
 
   it('resolve credentials', function() {
-    configure();
+    job.configure();
     // manually set arguments
     nconf.set('username', 'corey');
     nconf.set('password', 'Password');
     // test + verify
-    return run().then(credentials => {
+    return job.run().then(credentials => {
       expect(credentials[0]).to.equal('corey');
       expect(credentials[1]).to.equal('Password');
     });
