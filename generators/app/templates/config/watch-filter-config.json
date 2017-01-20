@@ -1,0 +1,12 @@
+{
+  "folderExcludes": [
+    "^node_modules",
+    "^.git",
+    "^coverage"
+  ],
+  "fileExcludes": [
+    "^test/support/watch-filter.js$",
+    "^config/watch-filter-config.json$",
+    "^package.json$"
+  ]
+}
