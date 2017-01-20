@@ -88,7 +88,8 @@ module.exports = generators.Base.extend({
       type: 'input',
       name: 'gitRepository',
       message: 'Git Repository:',
-      store: true
+      store: false,
+      default: 'TODO'
     }];
 
     return this.prompt(questions).then(answers => {
