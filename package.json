@@ -33,13 +33,13 @@
   },
   "homepage": "https://github.com/coreyferguson/generator-cliify#readme",
   "dependencies": {
-    "underscore.string": "^3.3.4",
-    "yeoman-generator": "^0.24.1"
+    "underscore.string": "3.3.4",
+    "yeoman-generator": "0.24.1"
   },
   "devDependencies": {
-    "mocha": "^3.1.2",
-    "release-it": "^2.4.3",
-    "yeoman-assert": "^2.2.1",
-    "yeoman-test": "^1.5.1"
+    "mocha": "3.2.0",
+    "release-it": "2.5.3",
+    "yeoman-assert": "2.2.2",
+    "yeoman-test": "1.6.0"
   }
 }
