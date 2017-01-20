@@ -22,7 +22,7 @@ describe('job unit tests', function() {
       .stub(nquirer, 'inquire')
       .returns(Promise.resolve(nconfMock));
     const log = sandbox.stub(winston, 'log');
-    return run().then(() => {
+    return run().then(credentials => {
       expect(log).to.be.calledWith('debug', 'Username: username');
       expect(log).to.be.calledWith('silly', '(__)');
       expect(log).to.be.calledWith('silly', `(oo) <-- username`);
