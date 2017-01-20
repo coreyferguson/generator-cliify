@@ -84,6 +84,11 @@ module.exports = generators.Base.extend({
         if (input !== null && input !== undefined && input !== '') return true;
         else return 'Author email cannot be null or empty.';
       }
+    }, {
+      type: 'input',
+      name: 'gitRepository',
+      message: 'Git Repository:',
+      store: true
     }];
 
     return this.prompt(questions).then(answers => {
@@ -92,6 +97,7 @@ module.exports = generators.Base.extend({
       this.npmName = answers.npmName;
       this.authorName = answers.authorName;
       this.authorEmail = answers.authorEmail;
+      this.gitRepository = answers.gitRepository;
     });
   },
 
@@ -128,7 +134,8 @@ module.exports = generators.Base.extend({
       appDescription: this.appDescription,
       npmName: this.npmName || this.appName,
       authorName: this.authorName,
-      authorEmail: this.authorEmail
+      authorEmail: this.authorEmail,
+      gitRepository: this.gitRepository
     };
   }
 

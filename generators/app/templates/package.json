@@ -43,5 +43,9 @@
     "babel",
     "es5",
     "es6"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "<%=gitRepository%>"
+  }
 }

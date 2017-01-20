@@ -3,10 +3,8 @@
 
 ## Install
 
-**TODO**: Update github repository.
-
 ```bash
-git clone git@github.com:organization/<%=appName%>.git
+git clone <%=gitRepository%>
 cd <%=appName%>
 npm install
 npm link
