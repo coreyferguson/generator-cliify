@@ -35,12 +35,14 @@ export function run() {
     const username = nconf.get('username');
     const password = nconf.get('password');
 
+    winston.log('info', 'Retrieved credentials from nconf');
     winston.log('debug', `Username: ${username}`);
 
     winston.log('silly', '(__)');
     winston.log('silly', `(oo) <-- ${username}`);
     winston.log('silly', ' \\/');
 
+    winston.log('info', 'Job complete.');
     return [username, password];
   });
 }
