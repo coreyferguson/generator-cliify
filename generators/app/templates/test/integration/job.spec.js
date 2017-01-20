@@ -30,10 +30,7 @@ describe('job integration tests', function() {
     nconf.set('username', 'corey');
     nconf.set('password', 'Password');
     // test + verify
-    return job.run().then(credentials => {
-      expect(credentials[0]).to.equal('corey');
-      expect(credentials[1]).to.equal('Password');
-    });
+    return expect(job.run()).to.eventually.eql(['corey', 'Password']);
   });
 
 });
