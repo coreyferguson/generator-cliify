@@ -36,7 +36,7 @@
     "sinon": "1.17.7",
     "sinon-chai": "2.8.0",
     "watch": "1.0.1",
-    "watch-filter": "0.1.1"
+    "watch-filter": "1.0.2"
   },
   "keywords": [
     "CLI",
