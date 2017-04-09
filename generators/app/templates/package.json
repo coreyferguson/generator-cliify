@@ -11,11 +11,9 @@
   "scripts": {
     "babel": "./node_modules/.bin/babel src --out-dir babel --source-maps inline",
     "start": "npm run babel && ./bin/job.js",
-    "istanbul": "./node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --compilers js:babel-register test/unit test/integration",
-    "jscs": "./node_modules/.bin/jscs src test config",
+    "istanbul": "./node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --recursive --compilers js:babel-register test/spec",    "jscs": "./node_modules/.bin/jscs src test config",
     "test": "npm run jscs && npm run istanbul",
-    "watchTestExec": "npm run jscs && ./node_modules/mocha/bin/mocha --compilers js:babel-register --reporter progress test/unit test/integration",
-    "watchTest": "node_modules/.bin/watch 'npm run watchTestExec' --filter=config/watch-filter.js --wait=5 --interval=0.5",
+    "watchTestExec": "npm run jscs && ./node_modules/mocha/bin/mocha --recursive --compilers js:babel-register --reporter progress test/spec",    "watchTest": "node_modules/.bin/watch 'npm run watchTestExec' --filter=config/watch-filter.js --wait=5 --interval=0.5",
     "release": "npm test && npm run babel && ./node_modules/.bin/release-it -c config/release.json"
   },
   "dependencies": {

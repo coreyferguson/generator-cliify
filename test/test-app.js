@@ -39,10 +39,10 @@ describe('app', function() {
       'src/job.js',
 
       // test
-      'test/unit/job.spec.js',
-      'test/unit/test-environment.spec.js',
-      'test/support/test-utils.js',
-      'test/integration/job.spec.js'
+      'test/spec/job.unit.js',
+      'test/spec/job.integration.js',
+      'test/spec/test-environment.js',
+      'test/support/test-utils.js'
     ]);
   });
 
