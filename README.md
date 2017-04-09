@@ -64,4 +64,4 @@ npm test
 
 ## Contribution
 
-See [CONTRIBUTE.md](CONTRIBUTE.md) for contribution details.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution details.

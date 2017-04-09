@@ -10,4 +10,4 @@ npm install -g <%=npmName%>
 
 ## Contribution
 
-Contribution documentation can be found [here](CONTRIBUTE.md).
+Contribution documentation can be found [here](CONTRIBUTING.md).
