@@ -6,13 +6,14 @@ const watchFilter = new WatchFilter({
   projectDirectory: path.join(__dirname, '..'),
 
   folderExcludes: [
-    '^node_modules',
     '^.git',
-    '^coverage'
+    '^coverage',
+    '^node_modules'
   ],
 
   fileExcludes: [
     '^config/watch-filter.json$',
+    '^npm-debug.json$',
     '^package.json$'
   ]
 
